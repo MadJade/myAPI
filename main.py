@@ -10,7 +10,7 @@ users = {}
 conn.commit()
 
 
-@app.get("/registerNewUser")
+@app.get("/registerNewUsers")
 def registerNewUser(name,age,gender,major):
     c.execute("insert into users values (?,?,?,?)",(name,age,gender,major))
     conn.commit()
