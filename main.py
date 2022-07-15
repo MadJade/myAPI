@@ -22,4 +22,11 @@ def deleteUser():
     users = c.fetchall()
     conn.commit()
     return users
+
+@app.get("/huhuh")
+def deleteUser():
+    c.execute("select * from users")
+    users = c.fetchall()
+    conn.commit()
+    return users
     
